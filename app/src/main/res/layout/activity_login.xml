@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical">
+    <ImageView
+        android:src="@drawable/water_mark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:src="@drawable/login_icon" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/bg_edit_border_radius"
+                    android:gravity="center_vertical">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="@string/user_name"
+                        android:maxLength="30"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/hint_text_color"
+                        android:textSize="@dimen/_13sdp">
+
+                    </androidx.appcompat.widget.AppCompatEditText>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_edit_border_radius"
+                    android:gravity="center_vertical">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/poppins_regular"
+                        android:hint="@string/password"
+                        android:maxLength="30"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_50sdp"
+                        android:singleLine="true"
+                        android:textColorHint="@color/hint_text_color"
+                        android:textSize="@dimen/_13sdp" />
+
+
+                    <ImageView
+                        android:id="@+id/showPassBtn"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:alpha=".6"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/eye_close" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:weightSum="2">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLogin"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button"
+                        android:backgroundTint="@color/app_base_color"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text="@string/login"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp"
+                        app:rippleColor="@color/purple_200" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCancel"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button"
+                        android:backgroundTint="@color/app_base_color"
+                        android:fontFamily="@font/poppins_regular"
+                        android:gravity="center"
+                        android:text="@string/cancel"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp"
+                        app:rippleColor="@color/purple_200" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:gravity="center"
+                android:text="@string/si_no" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_button"
+                android:backgroundTint="@color/app_base_color"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:text="@string/registro"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                app:rippleColor="@color/purple_200" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/content"
+        layout="@layout/content_loading" />
+</RelativeLayout>

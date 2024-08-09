@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "279691080494",
+    "project_id": "clinica-sanchis",
+    "storage_bucket": "clinica-sanchis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279691080494:android:9ee02580cdcdd0f304c0bf",
+        "android_client_info": {
+          "package_name": "com.eurosalud.pdp_cs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279691080494-3iaog31kisdausb25g9p4sp7ga0gnjlc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcAn1ZrLit8pbYCZ268su12TKZjSYed24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279691080494-3iaog31kisdausb25g9p4sp7ga0gnjlc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "279691080494-e8bs05j35fnpmkq78q7h82eukq78m1gr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ClinicaSanchis.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

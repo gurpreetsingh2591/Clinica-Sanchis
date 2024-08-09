@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Clinica Sanchis</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="name">Name</string>
+    <string name="user_name">Usuario</string>
+    <string name="login">Conectar</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="logout">Logout</string>
+    <string name="cancel">Cancelar</string>
+    <string name="si_no">Si no conoce o no tiene usuario y contraseña puede solicitarlo aquí</string>
+    <string name="registro">Registro</string>
+    <string name="desconector">Desconectar</string>
+    <string name="nombre">Nombre</string>
+    <string name="primer_apellido">Primer apellido</string>
+    <string name="surname">Surname</string>
+    <string name="segundo_appllido">Segundo appllido</string>
+    <string name="phone">Phone</string>
+    <string name="cp">Cp</string>
+    <string name="enviar">Enviar</string>
+    <string name="reset">Reset</string>
+    <string name="dni">DNI</string>
+    <string name="registration">Registration</string>
+    <string name="these_data">These data will be used to check your identity and credentials will be sent when verified.</string>
+    <string name="if_it_is_your">If it is your first contact, we will contact you soon</string>
+</resources>

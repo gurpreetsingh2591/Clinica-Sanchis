@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eurosalud.pdp_cs.ui.dashboard.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_base_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_10sdp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/tvLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/desconector"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_below="@+id/llLogout"
+            android:id="@+id/llToken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_base_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/_10sdp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/tvToken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:padding="@dimen/_5sdp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/llToken" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llToken"
+            android:layout_marginTop="10dp"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/content"
+            layout="@layout/content_loading" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

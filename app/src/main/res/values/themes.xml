@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Betera" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/app_base_color</item>
+        <item name="colorPrimaryDark">@color/app_base_color</item>
+        <item name="colorAccent">@color/app_base_color</item>
+        <!-- Customize your theme here. -->
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/app_base_color</item>
+        <item name="colorSecondaryVariant">@color/app_base_color</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/app_base_color</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+
+</resources>
